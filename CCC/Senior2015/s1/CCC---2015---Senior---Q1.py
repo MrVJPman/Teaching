@@ -35,10 +35,16 @@ for filename in os.listdir("."):
 combined_file_contents = {}
 for content in all_input_file_contents:
     combined_file_contents[content[:-3]] = [all_input_file_contents[content], all_output_file_contents[content[:-3]+".out"]]
-#print(combined_file_contents)
+print(combined_file_contents)
 
-def run_all_test_cases():
-    for testcase in combined_file_contents:
+
+#test_dict structure
+#key is test case name
+#value list item 0 is inputs
+#value list item 1 is outputs
+#{'s1.1': ['abracadabra\naabcabdarra\n', 'A\n']}
+def run_all_test_cases(test_dict):
+    for testcase in test_dict:
         print("Test case: ", testcase)
         inputs = combined_file_contents[testcase][0].split("\n")
         index = 1
@@ -50,12 +56,12 @@ def run_all_test_cases():
         expected_output = combined_file_contents[testcase][1].strip()       
         print("Expected: ", expected_output)
         print("Received: ", received_output)
-        assert(received_output == expected_output)
+        assert(expected_output == received_output)
         print("\n")
 
 
 
-run_all_test_cases()
+run_all_test_cases(combined_file_contents)
 
 str1 = input()
 str2 = input()
