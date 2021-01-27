@@ -53,4 +53,11 @@ def run_all_test_cases():
         assert(received_output == expected_output)
         print("\n")
 
+
+
 run_all_test_cases()
+
+str1 = input()
+str2 = input()
+print(CCC_2015_Question_1(str1, str2))
+

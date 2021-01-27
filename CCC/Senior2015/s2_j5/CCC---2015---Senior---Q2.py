@@ -69,10 +69,12 @@ def run_all_test_cases():
         assert(received_output == expected_output)
         print("\n")
 
+
 run_all_test_cases()
 
-#mode = input()
-#N = input()
-#D_citizens = input() 
-#P_citizens = input()
-#CCC_2015_Question_2(mode, N, D_citizens, P_citizens)
+mode = input()
+N = input()
+D_citizens = input() 
+P_citizens = input()
+print(CCC_2015_Question_2(mode, N, D_citizens, P_citizens))
+
