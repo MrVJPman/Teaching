@@ -1,4 +1,4 @@
-#2020 Junior Q2
+#2020 Junior Q3
 
 def CCC_2020_Question_3(input_string):
     lines = input_string.split()
