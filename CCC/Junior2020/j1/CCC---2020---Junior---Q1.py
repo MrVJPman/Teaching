@@ -1,14 +1,22 @@
 #2020 Junior Q1
 
 def CCC_2020_Question_1(input_string):
-    lines = input_string.split()
+    #this will always be here strip()
+    lines = input_string.strip().split("\n") 
+    #strip : to remove last newline
+    #split : to divide into individual lines
+    #Your Solution Starts Here 
+    solution_string = None 
     line1 = int(lines[0])
     line2 = int(lines[1])
     line3 = int(lines[2])
     if (line1 * 1 + line2 * 2 + line3 * 3) >= 10:
-        return "happy"
+        solution_string = "happy"
     else:
-        return "sad"
+        solution_string = "sad"    
+    #Your Solution Ends Here
+    return str(solution_string)
+    
 #=======================
 
 import os 
@@ -31,7 +39,7 @@ for filename in os.listdir("."):
 combined_file_contents = {}
 for content in all_input_file_contents:
     combined_file_contents[content[:-3]] = [all_input_file_contents[content], all_output_file_contents[content[:-3]+".out"]]
-print(combined_file_contents)
+#print(combined_file_contents)
 
 #test_dict structure
 #key is test case name

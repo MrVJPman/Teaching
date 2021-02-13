@@ -1,7 +1,10 @@
 #2020 Junior Q4
 
 def CCC_2020_Question_4(input_string):
-    lines = input_string.split() #this will always be here
+    #this will always be here strip()
+    lines = input_string.strip().split("\n") 
+    #strip : to remove last newline
+    #split : to divide into individual lines
     line_1 = lines[0]
     line_2 = lines[1]
     all_cyclic_shifts = []

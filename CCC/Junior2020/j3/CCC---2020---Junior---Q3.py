@@ -1,8 +1,11 @@
 #2020 Junior Q3
 
 def CCC_2020_Question_3(input_string):
-    lines = input_string.split()
-    N = int(lines[0])
+    #this will always be here strip()
+    lines = input_string.strip().split("\n") 
+    #strip : to remove last newline
+    #split : to divide into individual lines
+    N = int(lines[0]) 
     remainder_lines = lines[1:]
     x_list = []
     y_list = []
