@@ -65,7 +65,8 @@ def run_all_test_cases(test_dict):
 run_all_test_cases(combined_file_contents)
 
 
-print("ENTER inputs")
+print("MANUALLY ENTER TEST CASES HERE")
+print("Enter inputs")
 user_input_string = ""
 #START : change everything here to take inputs
 user_input_string += input() + "\n"

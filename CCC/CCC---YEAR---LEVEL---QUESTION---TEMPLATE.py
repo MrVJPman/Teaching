@@ -61,14 +61,14 @@ def run_all_test_cases(test_dict):
 #Comment/uncomment this as needed
 #run_all_test_cases(combined_file_contents)
 
-
 #This section is where you implement user input handling
-print("ENTER inputs")
+print("MANUALLY ENTER TEST CASES HERE")
+print("Enter inputs:")
 user_input_string = ""
 #START : insert your user input code below
 #END : insert your user input code above
 print("user_input_string:")
 print(user_input_string)
-print("result: ")
+print("result:")
 print(CCC_YEAR_LEVEL_Question_NUMBER(user_input_string)) 
 #CHANGE NAME OF ABOVE FUNCTION
