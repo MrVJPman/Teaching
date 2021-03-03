@@ -69,6 +69,8 @@ run_all_test_cases(combined_file_contents)
 print("ENTER inputs")
 user_input_string = ""
 #START : change everything here to take inputs
+user_input_string += input() + "\n"
+user_input_string += input() + "\n"
 #END : change everything here to take inputs
 print("user_input string:")
 print(user_input_string)

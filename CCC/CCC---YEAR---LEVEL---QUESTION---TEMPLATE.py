@@ -65,8 +65,8 @@ def run_all_test_cases(test_dict):
 print("MANUALLY ENTER TEST CASES HERE")
 print("Enter inputs:")
 user_input_string = ""
-#START : insert your user input code below
-#END : insert your user input code above
+#START : insert your user input handling code below
+#END : insert your user input handling code above
 print("user_input_string:")
 print(user_input_string)
 print("result:")
