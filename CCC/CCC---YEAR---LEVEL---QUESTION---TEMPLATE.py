@@ -48,7 +48,7 @@ def run_all_test_cases(test_dict):
         input_string = combined_file_contents[testcase][0]
         print("----------Input:  ")
         print(input_string)
-        received_output = CCC_2020_Question_5(input_string) #CHANGE NAME OF THIS FUNCTION
+        received_output = CCC_YEAR_LEVEL_Question_NUMBER(input_string) #CHANGE NAME OF THIS FUNCTION
         expected_output = combined_file_contents[testcase][1].strip()       
         print("----------Expected: ")
         print(expected_output)
