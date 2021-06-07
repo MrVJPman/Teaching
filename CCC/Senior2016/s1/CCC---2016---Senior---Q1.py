@@ -1,4 +1,4 @@
-def CCC_2015_Question_1(str1, str2):
+def CCC_2016_Question_1(str1, str2):
     str1_as_a_list = list(str1)
     for character in str2:
         if character == "*":
@@ -52,7 +52,7 @@ def run_all_test_cases(test_dict):
             print("User Input Line ", index, ": ", line)
             index += 1
         
-        received_output = CCC_2015_Question_1(inputs[0], inputs[1]) #CHANGE ONLY THIS LINE
+        received_output = CCC_2016_Question_1(inputs[0], inputs[1]) #CHANGE ONLY THIS LINE
         expected_output = combined_file_contents[testcase][1].strip()       
         print("Expected: ", expected_output)
         print("Received: ", received_output)
@@ -65,5 +65,5 @@ run_all_test_cases(combined_file_contents)
 
 str1 = input()
 str2 = input()
-print(CCC_2015_Question_1(str1, str2))
+print(CCC_2016_Question_1(str1, str2))
 
