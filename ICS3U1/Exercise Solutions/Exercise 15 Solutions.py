@@ -27,6 +27,10 @@ def str_list_combination(input_data_structure):
     return new_list
 
 
+my_list=["a","b","c"]
+print(list_function(my_list))
+
+
 #b) Call this function with this example input List. You should display the correct output. : 
 #input : [1, 2, 3] 
 #output : [1, 2, 3, “123”]
